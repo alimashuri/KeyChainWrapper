@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     
     fileprivate func showKeychainItem() {
         var email = ""
-        if (credential.retrieve() != nil) {
+        if credential.isStored() {
             let account = credential.retrieve() as! Account
             email = account.email
         }

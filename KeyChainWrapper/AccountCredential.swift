@@ -125,4 +125,13 @@ open class AccountCredential  {
         
         return true
     }
+    
+    
+    @discardableResult
+    open func isStored() -> Bool {
+        if self.retrieve() != nil {
+            return true
+        }
+        return false
+    }
 }
