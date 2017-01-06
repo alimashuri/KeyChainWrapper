@@ -42,10 +42,12 @@ class KeyChainWrapperTests: XCTestCase {
     
     func testCredentialStorage() {
         XCTAssertNotNil(account)
-//        XCTAssert(credential.storeAccount(account as AnyObject))
-//        XCTAssert((credential.retrieve() != nil))
-//        XCTAssertNotNil(credential.retrieve())
-//        XCTAssert(credential.delete())
+        XCTAssert(credential.storeAccount(account as AnyObject))
+        XCTAssert(credential.isStored())
+        XCTAssert((credential.retrieve() != nil))
+        XCTAssertNotNil(credential.retrieve())
+        XCTAssert(credential.delete())
+        XCTAssertNil(credential.retrieve())
         
         
     }

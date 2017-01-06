@@ -433,6 +433,7 @@
 				E3D8DD0F1E1F46ED009504ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3D8DD101E1F46ED009504ED /* Build configuration list for PBXNativeTarget "KeyChainWrapperTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +442,7 @@
 				E3D8DD121E1F46ED009504ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
